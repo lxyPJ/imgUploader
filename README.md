@@ -1,2 +1,2 @@
-# HTML5多图片上传插件
-## 文档未完善……
+# imgUploader.js
+## HTML5多图片上传插件
