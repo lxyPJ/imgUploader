@@ -4,7 +4,8 @@ HTML5多图片上传插件
 
 ## 特性
 
-- 支持多图片上传;
+- 不依赖任何js库
+- 支持多图片上传
 - 支持图片压缩(根据上传图片的大小合理选择压缩质量)
 - 提供文件读取的精确流程控制接口
 
@@ -30,7 +31,7 @@ HTML5多图片上传插件
         });
         /* 文件读取结束 */
         uploader.on('finish',function(){
-            //uploader.getDataUrl() 改方法可以获取压缩后的图片base64字符串列表
+            //uploader.getDataUrl() 该方法可以获取压缩后的图片base64字符串列表
             var dataUrlList = uploader.getDataUrl();
         });
     },false);
@@ -48,7 +49,7 @@ HTML5多图片上传插件
 	document.getElementById('upload').addEventListener('change',function(){
 		var uploader = new imgUploader(this.files);
 		uploader.upload(function(){
-		    //uploader.getDataUrl() 改方法可以获取压缩后的图片base64字符串列表
+		    //uploader.getDataUrl() 该方法可以获取压缩后的图片base64字符串列表
 		    var dataUrlList = uploader.getDataUrl();
 		});
 	});
